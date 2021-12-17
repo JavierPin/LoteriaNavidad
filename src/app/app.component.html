@@ -1,4 +1,20 @@
 <div class="text-layout">
   <h1>First Commit</h1>
-  <button pButton type="button" label="Test PrimeNg" ></button>
+  <hr>
+  <button pButton type="button" label="Test PrimeNg" icon="pi pi-check"  iconPos="right"></button>
+  <hr>
+  <p-fieldset legend="Titulo"  [toggleable]="false">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla officiis aperiam sint eaque commodi 
+    et nisi quo quis, ut facere? Quibusdam rerum illum eum officia totam, sapiente commodi dolorum!
+  </p-fieldset>
+  <hr>
+  <input type="text" pInputText placeholder="66999"/>
+  <hr>
+  <button pButton type="button" icon="pi pi-plus" class="p-button-raised p-button-rounded"></button>
+  <hr>
+  <p-messages [(value)]="msgs"></p-messages>
+  <hr>
+  <p-organizationChart [value]="data"></p-organizationChart>
+  <hr>
+  <p-chip label="Text with icon" icon="pi pi-check" style></p-chip>
 </div>
