@@ -11,6 +11,7 @@ import {InputTextModule} from 'primeng/inputtext';
 import {MessagesModule} from 'primeng/messages';
 import {MessageModule} from 'primeng/message';
 import {OrganizationChartModule} from 'primeng/organizationchart';
+import { PanelModule } from 'primeng/panel';
 import { ChipModule } from 'primeng/chip';
 
 @NgModule({
@@ -23,6 +24,7 @@ import { ChipModule } from 'primeng/chip';
     MessagesModule,
     MessageModule,
     OrganizationChartModule,
+    PanelModule,
     ChipModule
   ]
 })

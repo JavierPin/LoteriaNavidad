@@ -7,7 +7,6 @@ import { InspectorNumerosService } from './services/inspector-numeros.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
 
@@ -19,12 +18,13 @@ export class AppComponent {
   ngOnInit(): void {
     //this.loadResume();
     //this.loadNumber(7);
+    /*
     this.inspectorNumerosService.addNumero(7, this.listadoNumeros);
     this.inspectorNumerosService.addNumero(9999, this.listadoNumeros);
     console.log("listado inicial: ", this.listadoNumeros);
     this.inspectorNumerosService.inspeccionar(this.listadoNumeros);
     console.log("listado justo después de la llamada: ", this.listadoNumeros);
-
+*/
 
 
 

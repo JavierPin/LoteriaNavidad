@@ -1,25 +1,34 @@
 <div class="text-layout">
-  <h1>First Commit</h1>
-  <hr>
-  <button pButton type="button" label="Test PrimeNg" icon="pi pi-check"  iconPos="right"></button>
-  <hr>
-  <p-fieldset legend="Titulo"  [toggleable]="false">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla officiis aperiam sint eaque commodi 
-    et nisi quo quis, ut facere? Quibusdam rerum illum eum officia totam, sapiente commodi dolorum!
-  </p-fieldset>
-  <hr>
-  <input type="text" pInputText placeholder="66999"/>
-  <hr>
-  <button pButton type="button" icon="pi pi-plus" class="p-button-raised p-button-rounded" (click)="test()"></button>
-  <hr>
-  <p-messages [(value)]="msgs"></p-messages>
-  <hr>
-  <p-organizationChart [value]="data"></p-organizationChart>
-  <hr>
-  <p-chip label="Text with icon" icon="pi pi-check" style></p-chip>
-  <hr>
-  <p-fieldset legend="Debbug"  [toggleable]="true">
-    <pre> {{ resumen | json }} </pre>
-    <pre> {{ listadoNumeros | json }} </pre>
+
+  <div class="grid">
+    <div class="col-3">
+      <app-listado-tabla></app-listado-tabla>
+    </div>
+  </div>
+
+  <p-fieldset legend="Referencias"  [toggleable]="true">
+    <h1>First Commit</h1>
+    <hr>
+    <button pButton type="button" label="Test PrimeNg" icon="pi pi-check"  iconPos="right"></button>
+    <hr>
+    <p-fieldset legend="Titulo"  [toggleable]="false">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla officiis aperiam sint eaque commodi 
+      et nisi quo quis, ut facere? Quibusdam rerum illum eum officia totam, sapiente commodi dolorum!
+    </p-fieldset>
+    <hr>
+    <input type="text" pInputText placeholder="66999"/>
+    <hr>
+    <button pButton type="button" icon="pi pi-plus" class="p-button-raised p-button-rounded" (click)="test()"></button>
+    <hr>
+    <p-messages [(value)]="msgs"></p-messages>
+    <hr>
+    <p-organizationChart [value]="data"></p-organizationChart>
+    <hr>
+    <p-chip label="Text with icon" icon="pi pi-check" style></p-chip>
+    <hr>
+    <p-fieldset legend="Debbug"  [toggleable]="true">
+      <pre> {{ resumen | json }} </pre>
+      <pre> {{ listadoNumeros | json }} </pre>
+    </p-fieldset>
   </p-fieldset>
 </div>

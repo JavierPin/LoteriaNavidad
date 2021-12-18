@@ -9,6 +9,7 @@ import { HttpClientModule } from "@angular/common/http";
 
 // servicios
 import { InspectorNumerosService } from './services/inspector-numeros.service';
+import { ListadoNumerosModule } from './listado-numeros/listado-numeros.module';
 
 // resto imports
 
@@ -21,7 +22,7 @@ import { InspectorNumerosService } from './services/inspector-numeros.service';
     BrowserModule,
     AppRoutingModule,
     PrimeNgModule,
-    HttpClientModule
+    HttpClientModule, ListadoNumerosModule
   ],
   providers: [ InspectorNumerosService ],
   bootstrap: [AppComponent]
