@@ -5,6 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { PrimeNgModule } from './prime-ng/prime-ng.module';
+import { HttpClientModule } from "@angular/common/http";
+
+// servicios
+import { InspectorNumerosService } from './services/inspector-numeros.service';
 
 // resto imports
 
@@ -16,9 +20,10 @@ import { PrimeNgModule } from './prime-ng/prime-ng.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PrimeNgModule
+    PrimeNgModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ InspectorNumerosService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

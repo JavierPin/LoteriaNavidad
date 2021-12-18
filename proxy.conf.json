@@ -1,0 +1,10 @@
+{
+    "https://api.elpais.com": {
+      "target": "https://api.elpais.com",
+      "secure": true,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+}

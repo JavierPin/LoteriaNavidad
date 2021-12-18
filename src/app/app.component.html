@@ -10,11 +10,16 @@
   <hr>
   <input type="text" pInputText placeholder="66999"/>
   <hr>
-  <button pButton type="button" icon="pi pi-plus" class="p-button-raised p-button-rounded"></button>
+  <button pButton type="button" icon="pi pi-plus" class="p-button-raised p-button-rounded" (click)="test()"></button>
   <hr>
   <p-messages [(value)]="msgs"></p-messages>
   <hr>
   <p-organizationChart [value]="data"></p-organizationChart>
   <hr>
   <p-chip label="Text with icon" icon="pi pi-check" style></p-chip>
+  <hr>
+  <p-fieldset legend="Debbug"  [toggleable]="true">
+    <pre> {{ resumen | json }} </pre>
+    <pre> {{ listadoNumeros | json }} </pre>
+  </p-fieldset>
 </div>
